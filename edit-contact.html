@@ -40,7 +40,7 @@
         }
 
         function getContact(){
-            fetch(rootPath + 'Controller/get-contacts/?id=' + id)
+            fetch(rootPath + 'controller/get-contacts/?id=' + id)
             .then(function(response){
                 return response.json();
             })
