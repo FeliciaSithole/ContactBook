@@ -36,10 +36,14 @@
             var url = window.location.href;
             var pos = url.search("=");
             var id = url.slice(pos + 1);
+
+            id = id.split("?")[1].slice(2)
             return id;
         }
 
         function getContact(){
+            console.log("The id is :" + id);
+            console.log(rootPath)
             fetch(rootPath + 'controller/get-contacts/?id=' + id)
             .then(function(response){
                 return response.json();
