@@ -10,7 +10,7 @@ body {
     background-size: cover;
 }
 
-/*.container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     background: white;
@@ -23,7 +23,7 @@ body {
     color: #333;
     margin-bottom: 20px;
     text-align: center;
-}*/
+}
 
 /*Button Styling*/
 #refresh, #addContact {
@@ -108,4 +108,20 @@ body {
 
 #table img:hover {
     transform: scale(1.1);
+}
+
+/*Responsive Design*/
+@media (max-width: 768px) {
+    #table, .minimal-table {
+        font-size: 25px;
+    }
+
+    #table th, #table td {
+        padding: 22px 18px;
+    }
+
+    #table img {
+        width: 40px;
+        height: 40px;
+    }
 }
