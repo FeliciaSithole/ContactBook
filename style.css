@@ -129,19 +129,6 @@ body {
     }
 }
 
-.form-header {
-    background: linear-gradient(135deg, #cd9939 0%, #936819 100%);
-    color: white;
-    padding: 30px;
-    text-align: center;
-}
-
-.form-header h2{
-    font-size: 28px;
-    margin-bottom: 10px;
-    font-weight: 300;
-}
-
 #avatarImage {
     width: 100px;
     border-radius: 50%;
@@ -163,6 +150,10 @@ body {
 #submitForm {
     background: linear-gradient(135deg, #964b00 0%, #F2ECB6 100%);
     color: white;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 #submitForm:hover {
