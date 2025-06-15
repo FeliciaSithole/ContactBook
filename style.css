@@ -10,23 +10,8 @@ body {
     background-size: cover;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.h2 {
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 /*Button Styling*/
-#refresh, #addContact {
+#refresh, #addContact,#homeLink, #editContact, #deleteContact {
     background: linear-gradient(135deg, #964b00 0%, #F2ECB6 100%);
     color: white;
     border: none;
@@ -40,7 +25,7 @@ body {
     box-shadow: 0 4px 15px rgba(248, 192, 9, 0.3);
 }
 
-#refresh:hover, #addContact:hover {
+#refresh:hover, #addContact:hover, #homeLink:hover, #editContact:hover, #deleteContact:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(248, 192, 9, 0.4);
 }
@@ -125,3 +110,68 @@ body {
         height: 40px;
     }
 }
+
+/*edit-contact style*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-header {
+    background: linear-gradient(135deg, #cd9939 0%, #936819 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.form-header h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+#avatarImage {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#avatarImage:hover {
+    transform: scale(1.1);
+}
+
+#editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#submitForm {
+    background: linear-gradient(135deg, #964b00 0%, #F2ECB6 100%);
+    color: white;
+}
+
+#submitForm:hover {
+    transform: translateY(1.1px);
+    box-shadow: 0 5px 15px rgba(248, 192, 9, 0.4);
+}
+
+#refresh:hover, #addContact:hover, #homeLink:hover, #editContact:hover, #deleteContact:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(248, 192, 9, 0.4);
+}
+
